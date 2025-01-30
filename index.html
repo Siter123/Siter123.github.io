@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Knowledge Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#docs">Documents</a></li>
+                <li><a href="#knowledgebase">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Introduction to Knowledge Management</h2>
+        <p>Learn how to manage knowledge using SECI model.</p>
+    </section>
+    
+    <section id="forum">
+        <h2>Forum for Sharing Knowledge</h2>
+        <p>Discuss your experiences and share insights.</p>
+    </section>
+    
+    <section id="docs">
+        <h2>Upload and Share Documents</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="fileUpload">Choose file to upload:</label>
+            <input type="file" id="fileUpload" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    
+    <section id="knowledgebase">
+        <h2>Knowledge Base</h2>
+        <p>Access organized knowledge for better decision making.</p>
+    </section>
+    
+    <footer>
+        <p>Knowledge Management System © 2025</p>
+    </footer>
+</body>
+</html>

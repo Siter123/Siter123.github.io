@@ -3,179 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Platform</title>
+    <title>SECI Knowledge Management</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ส่วนหัว -->
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>Learning Platform</h1>
-        </div>
+        <h1>SECI Knowledge Management</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#forum">Forum</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#socialization">Socialization</a></li>
+                <li><a href="#externalization">Externalization</a></li>
+                <li><a href="#combination">Combination</a></li>
+                <li><a href="#internalization">Internalization</a></li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search Courses..." id="search">
-        </div>
     </header>
-    
-    <!-- ส่วนเนื้อหา -->
-    <main>
-        <section id="home">
-            <h2>Welcome to the Learning Platform</h2>
-            <p>Access a wide variety of online courses and educational resources.</p>
-        </section>
-        
-        <section id="courses">
-            <h2>Popular Courses</h2>
-            <div class="course-list">
-                <div class="course-card">
-                    <h3>Course 1</h3>
-                    <p>Description of the course.</p>
-                    <button>Start Now</button>
-                </div>
-                <div class="course-card">
-                    <h3>Course 2</h3>
-                    <p>Description of the course.</p>
-                    <button>Start Now</button>
-                </div>
-                <!-- เพิ่มคอร์สอื่น ๆ -->
-            </div>
-        </section>
-        
-        <section id="articles">
-            <h2>Latest Articles</h2>
-            <div class="article-list">
-                <div class="article-card">
-                    <h3>Article Title 1</h3>
-                    <p>Summary of the article...</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="article-card">
-                    <h3>Article Title 2</h3>
-                    <p>Summary of the article...</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-        </section>
-        
-        <section id="forum">
-            <h2>Discussion Forum</h2>
-            <p>Join discussions with fellow learners and educators.</p>
-            <button>Join Forum</button>
-        </section>
-    </main>
-    
-    <!-- ส่วนท้าย -->
+
+    <!-- Socialization Section -->
+    <section id="socialization">
+        <h2>🔄 Socialization</h2>
+        <p>แลกเปลี่ยนประสบการณ์ผ่านฟอรัม</p>
+        <button>Join Forum</button>
+    </section>
+
+    <!-- Externalization Section -->
+    <section id="externalization">
+        <h2>📄 Externalization</h2>
+        <p>อัปโหลดและแชร์เอกสารความรู้</p>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" id="fileUpload" name="file">
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+
+    <!-- Combination Section -->
+    <section id="combination">
+        <h2>📚 Combination</h2>
+        <p>รวมข้อมูลและสร้างฐานความรู้</p>
+        <button>View Knowledge Base</button>
+    </section>
+
+    <!-- Internalization Section -->
+    <section id="internalization">
+        <h2>🎓 Internalization</h2>
+        <p>เรียนรู้และนำไปใช้ผ่านคอร์สออนไลน์</p>
+        <button>Start Learning</button>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Learning Platform. All Rights Reserved.</p>
-        <p>Contact us at: info@learningplatform.com</p>
+        <p>© 2025 SECI Knowledge Management | Contact: info@seciknowledge.com</p>
     </footer>
 </body>
-    /* Style for the website */
+    /* General Style */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
 }
 
-/* ส่วนหัว */
+/* Header */
 header {
-    background-color: #3498db;
+    background-color: #2c3e50;
     color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-header .logo h1 {
-    margin: 0;
-}
-
-header nav ul {
-    list-style-type: none;
-    margin: 0;
+nav ul {
+    list-style: none;
     padding: 0;
-    display: flex;
 }
 
-header nav ul li {
-    margin-right: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-header .search-bar input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 20px;
-}
-
-/* เนื้อหาหลัก */
-main {
-    padding: 20px;
-}
-
+/* Section Style */
 section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.course-list, .article-list {
-    display: flex;
-    gap: 20px;
-}
-
-.course-card, .article-card {
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.course-card h3, .article-card h3 {
-    color: #3498db;
-}
-
+/* Buttons */
 button {
+    padding: 10px 15px;
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 button:hover {
     background-color: #2980b9;
 }
 
-/* ส่วนท้าย */
+/* Footer */
 footer {
     background-color: #2c3e50;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
-
-</html>
